@@ -8,10 +8,9 @@ postmerge:
     type: <commit|time>
 premerge:
   - "test/scripts/box/box.js"
+configFile: .mocharc.yml
 prerun:
   - npm i
-  - export NODE_ENV='test'
-  - export NO_DEPRECATION='body-parser,express'
 postrun:
   - node --version
   - echo "Ba Dum TAS... -_-"
