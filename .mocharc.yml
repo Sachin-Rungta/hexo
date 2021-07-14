@@ -4,5 +4,5 @@ ui: bdd
 full-trace: true
 exit: true
 require: 
-  - "chai/register-should"
+  - "node_modules/chai/register-should"
 parallel: true
