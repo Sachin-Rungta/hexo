@@ -2,12 +2,12 @@
 framework: mocha
 postmerge:
   pattern:
-    - "test/scripts/box/box.js"
+    - "./test/scripts/box/box.js"
   strategy:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 premerge:
-  - "test/scripts/box/box.js"
+  - "./test/scripts/box/box.js"
 configFile: .mocharc.yml
 prerun:
   - npm i
